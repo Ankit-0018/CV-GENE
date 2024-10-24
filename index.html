@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resume Builder</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Resume Builder</h1>
+        <div class="form-container">
+            <form id="resumeForm" onsubmit="generateResume(event)">
+                <h2>Personal Information</h2>
+                <label for="name">Full Name:</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="phone">Phone:</label>
+                <input type="text" id="phone" name="phone" required>
+
+                <h2>Profile Summary</h2>
+                <label for="summary">Profile Summary:</label>
+                <textarea id="summary" name="summary" required></textarea>
+
+                <h2>Education</h2>
+                <label for="education">Education Details:</label>
+                <textarea id="education" name="education" required></textarea>
+
+                <h2>Experience</h2>
+                <label for="experience">Work Experience:</label>
+                <textarea id="experience" name="experience" required></textarea>
+
+                <h2>Skills</h2>
+                <label for="skills">Skills (comma separated):</label>
+                <textarea id="skills" name="skills" required></textarea>
+
+                <button type="submit">Generate CV</button>
+            </form>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
